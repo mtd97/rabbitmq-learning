@@ -5,7 +5,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 //@Service
 public class HelloRabbitConsumer {
 
-    @RabbitListener(queues = "mtd.hello")
+    @RabbitListener(queues = "course.hello")
     public void listen(String message) {
         System.out.println("Consuming " + message);
     }

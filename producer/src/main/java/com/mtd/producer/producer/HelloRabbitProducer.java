@@ -11,7 +11,7 @@ public class HelloRabbitProducer {
     private RabbitTemplate rabbitTemplate;
 
     public void sendHello(String name) {
-        rabbitTemplate.convertAndSend("mtd.hello", "Hello " + name);
+        rabbitTemplate.convertAndSend("course.hello", "Hello " + name);
     }
 
 }
